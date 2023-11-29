@@ -1,22 +1,19 @@
 import Head from "next/head";
+import Link from 'next/link';
 import {
-  AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiFillGithub,
+  AiOutlineMail, 
+  AiFillPhone
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import deved from "../public/dev-ed-wave.png";
-import code from "../public/code.png";
-import design from "../public/design.png";
-import consulting from "../public/consulting.png";
+import myself from "../public/myself.png";
+import DeAnza from "../public/DeAnza.jpg";
+import UW from "../public/UW.jpg";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import project1 from "../public/project1.jpg";
+import project2 from "../public/project2.jpg"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,7 +28,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyed</h1>
+            <h1 className="font-burtons text-xl">Portofolio</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -42,7 +39,8 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href="https://drive.google.com/file/d/1O-tXf5Tffar40XLRBK5gYzygTBtzA1Vg/view?usp=sharing"
+                  target="_blank"
                 >
                   Resume
                 </a>
@@ -51,160 +49,159 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Dimitri Marco
+              Glenn William
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Developer and designer.
+              A software developer specializing in backend development.
             </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl text-justfy-center">
+            A dedicated Electrical and Computer Engineering scholar with nearly one year of hands-on experience in developing, testing, and 
+            maintenance of software solutions, as evidenced by a successful internship, active involvement in hackathons, coding competitions, 
+            and programming societies.
+            </p>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              Proficient in the development of endpoint systems, with the capability to create robust APIs and web services. Skilled in designing and implementing efficient function algorithms while ensuring comprehensive testing using a variety of tools and programming languages.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+              <a href="https://www.linkedin.com/in/glennwilliam/" target="_blank" rel="noopener noreferrer">
+                <AiFillLinkedin />
+              </a>
+              <a href="https://github.com/GlennWilliam" target="_blank" rel="noopener noreferrer">
+                <AiFillGithub />
+              </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image src={myself} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
-            </p>
+            <h3 className="text-3xl py-1 dark:text-white ">Education</h3>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image src={DeAnza} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Beautiful Designs
+                De Anza College <br></br>
+                Cupertino, California <br></br>
+                2021-2023
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-red-600">Associate Degree in Science in Computer Science for Transfer</h4>
+              <p className="text-gray-800 py-1">Cummulative GPA: 4.0; summa cumlaude</p>
+              <h4 className="py-4 text-teal-600">Relevant Coursework</h4>
+              <p className="text-gray-800 py-1">Programming Methodologies</p>
+              <p className="text-gray-800 py-1">x86 Processor Assembly Language and Computer Architecture</p>
+              <p className="text-gray-800 py-1">Data Abstraction and Structures</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+              <Image src={UW} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                University of Washington <br></br>
+                Seattle, Washington <br></br>
+                Expected Graduation: June 2025
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+                
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
-              <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
-              </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-red-600">Bachelor of Science in Electrical and Computer Engineering (BSECE)</h4>
+              <p className="text-gray-800 py-1">Cummulative GPA: 3.95</p>
+              <h4 className="py-4 text-teal-600">Relevant Coursework</h4>
+              <p className="text-gray-800 py-1">Progamming for Signal Processing</p>
+              <p className="text-gray-800 py-1">Circuit Analysis</p>
+              <p className="text-gray-800 py-1">Analysis and Modeling of Electronic and Photonic Device</p>
             </div>
           </div>
         </section>
-        <section className="py-10">
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
-            </p>
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-              />
+
+        <section>
+          <h3 className="text-3xl py-1 dark:text-white ">Personal Projects</h3>
+          <div className="lg:flex gap-10 py-4">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <Image src={project1} width={350} height={200} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Employee Account Management <br></br>
+                Language used: PHP, HTML, CSS, JavaScript, MySQL
+              </h3>
+              <p className="text-md py-2 leading-6 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg text-justify">
+                Conceptualized and developed a comprehensive web-based Employee Account Management System using an extensive tech stack, 
+                including PHP, HTML, CSS, JavaScript, and MySQL. The system aimed to streamline employee data management and enforce precise access control.
+                <br></br>
+                <br></br>
+                Successfully implemented essential functionalities for user registration, editing, and deletion, ensuring the meticulous maintenance of 
+                employee data. Additionally, introduced a robust role management system to allocate specific permissions and access rights to 
+                registered users. Leveraged MySQL for secure data storage and retrieval, contributing to enhanced data integrity and reliability.
+              </p>
+              <div className="py-4">
+                <Link href="https://github.com/GlennWilliam/Employee-Account-Management-.git" passHref>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md">
+                      View on GitHub
+                    </button>
+                  </a>
+                </Link>
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
+
+            {/* Personal Project Item 2 */}
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <Image src={project2} width={350} height={200} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                RESTful API for User Account
+                <br></br> 
+                Language used: Java, MySQL, Maven, pom.xml
+              </h3>
+              <p className="text-md py-2 leading-6 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-lg">
+              Designed and executed a RESTful API system for user account management, enabling seamless CRUD (Create, Read, Update, Delete)
+              operations on user records through standard HTTP methods such as PUT, POST, DELETE, and GET. The API strictly adheres to 
+              industry best practices, ensuring proper HTTP status codes and delivering JSON responses. 
+              <br></br>
+              <br></br>
+              Employed MySQL queries to retrieve and manipulate data in the database. Implemented JSON and query parameter handling for flexible data interaction.
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+
+              </p>
+              <div className="py-4">
+                <Link href="https://github.com/GlennWilliam/RESTful-API-for-User-Account-.git" passHref>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md">
+                      View on GitHub
+                    </button>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
+
+        <section>
+          <h3 className="text-3xl py-1 dark:text-white">Contact Information</h3>
+          <div className="text-center p-10 py-10">
+            <div className="text-2xl py-2 dark:text-white md:text-3xl">
+              <p>
+                <AiOutlineMail className="inline-block text-4xl mr-2" />
+                Email: glennwilliam1009@gmail.com
+              </p>
+              <p>
+                <AiFillPhone className="inline-block text-4xl mr-2" />
+                Phone: +6281213198988
+              </p>
+            </div>
+          </div>
+        </section>
+
+      
+
+        
+       
       </main>
     </div>
   );
